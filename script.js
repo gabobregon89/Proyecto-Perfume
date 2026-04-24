@@ -2,52 +2,58 @@ const whatsappNumber = "5493624859559";
 
 const perfumes = [
   {
-    name: "Amber Nocturne",
-    price: "$39.900",
+    name: "KAIAK Aero",
+    price: "$62.000",
     size: "100 ml",
-    family: "Ambar especiado",
-    description: "Notas calidas de vainilla, cuero suave y maderas oscuras.",
+    family: "Femenino / Masculino",
+    description: "Fresca y moderna, que busca capturar el encuentro del viento con el agua del mar.",
     gradient: "linear-gradient(135deg, #d4a373 0%, #8b5e34 100%)",
+    image: "images/kaik-aero.webp",
   },
   {
-    name: "Velvet Bloom",
-    price: "$42.500",
-    size: "80 ml",
-    family: "Floral elegante",
-    description: "Rosa aterciopelada, jazmin luminoso y fondo almizclado.",
-    gradient: "linear-gradient(135deg, #f2c6c2 0%, #b56576 100%)",
-  },
-  {
-    name: "Citrus Atelier",
-    price: "$34.800",
-    size: "90 ml",
-    family: "Citrico fresco",
-    description: "Bergamota, neroli y un cierre limpio para todos los dias.",
-    gradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
-  },
-  {
-    name: "Midnight Oud",
-    price: "$48.900",
+    name: "KAIAK Clasico",
+    price: "$62.800",
     size: "100 ml",
-    family: "Amaderado intenso",
-    description: "Oud refinado, incienso y toques ahumados de gran presencia.",
+    family: "Masculino",
+    description: "Aromática herbal de frescura potente, ideal para uso diario y climas cálidos.",
+    gradient: "linear-gradient(135deg, #f2c6c2 0%, #b56576 100%)",
+    image: "images/kaiak-clasico-masc.webp",
+  },
+  {
+    name: "KAIAK Aventura",
+    price: "$62.000",
+    size: "100 ml",
+    family: "Femenino",
+    description: "Floral y refrescante, ideal para el uso diario en primavera y verano.",
+    gradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+    image: "images/kaiak-aventura-fem.webp",
+  },
+  {
+    name: "KRISKA Jeans",
+    price: "$50.500",
+    size: "100 ml",
+    family: "Femenino",
+    description: "Floral Verde, con una mezcla de frescor cítrico, notas dulces moderadas y confort.",
     gradient: "linear-gradient(135deg, #5c4742 0%, #1f1714 100%)",
+    image: "images/kriska-jeans-fem.webp",
   },
   {
-    name: "Pure Linen",
-    price: "$31.700",
-    size: "75 ml",
-    family: "Limpio y suave",
-    description: "Salida fresca, corazon blanco y sensacion de ropa recien lavada.",
+    name: "KRISKA Clasico",
+    price: "$45.000",
+    size: "100 ml",
+    family: "Femenino",
+    description: "Dulzura de vainilla equilibrada con maderas, notas de ciruela y frambuesa negra.",
     gradient: "linear-gradient(135deg, #dbe7f0 0%, #7a9eb1 100%)",
+    image: "images/kriska-clasico-fem.webp",
   },
   {
-    name: "Golden Peony",
-    price: "$37.200",
-    size: "85 ml",
-    family: "Floral frutal",
-    description: "Peonia, pera jugosa y un fondo delicado con aire sofisticado.",
+    name: "HUMOR Liberta",
+    price: "$60.200",
+    size: "100 ml",
+    family: "Unisex",
+    description: "Amaderada Frutal Moderada, ideal para mujer y hombre.",
     gradient: "linear-gradient(135deg, #f7d794 0%, #f19066 100%)",
+    image: "images/humor-liberta.webp",
   },
 ];
 
@@ -63,7 +69,7 @@ function renderPerfumes() {
     .map(
       (perfume) => `
         <article class="catalog-card">
-          <div class="catalog-visual" style="--card-gradient: ${perfume.gradient}">
+          <div class="catalog-visual" style="--card-gradient: url(${perfume.image})">
             <div class="bottle-shape" aria-hidden="true"></div>
           </div>
           <div class="catalog-body">
