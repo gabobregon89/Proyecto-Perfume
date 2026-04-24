@@ -8,7 +8,7 @@ const perfumes = [
     family: "Femenino / Masculino",
     description: "Fresca y moderna, que busca capturar el encuentro del viento con el agua del mar.",
     gradient: "linear-gradient(135deg, #d4a373 0%, #8b5e34 100%)",
-    image: "images/kaiak-aero.webp",
+    image: "images/kaiak-aero-masc.webp",
   },
   {
     name: "KAIAK Clasico",
